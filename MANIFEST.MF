@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Cytoscape-API-Compatibility: 3.0
+Cytoscape-App: fr.curie.MM.ModuleManager_App
+Cytoscape-App-Name: Module Manager
+Cytoscape-App-Version: 1.0
