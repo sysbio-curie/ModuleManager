@@ -21,8 +21,7 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 /**
- * Not modal dialog selecting nodes from a list paste from clipboard
- * 
+ * Not modal dialog selecting nodes from a list paste from clipboard 
  * @author Daniel.Rovera@curie.fr
  */
 public class TextFromPasteBox extends GridBagDialog implements ActionListener,ClipboardOwner{
@@ -38,8 +37,8 @@ public class TextFromPasteBox extends GridBagDialog implements ActionListener,Cl
 	final int height=480;
 	private JTextArea dtext;
 	private JButton pasteButton,actionButton,exitButton ;
-	SelectNodesByName action;
-	public TextFromPasteBox(JFrame parent,String title,String text,SelectNodesByName action){
+	SelectByName action;
+	public TextFromPasteBox(JFrame parent,String title,String text,SelectByName action){
 		super(parent,title,false,cx,cy,cw,ch,xw,yw,cf);
 		this.action=action;
 		setSize(width,height);

@@ -116,6 +116,17 @@ public class ModuleUtils {
 		return null;
 	}
 	/**
+	 * Return first edge with name, return a CyEdge
+	 */
+	public CyEdge getCyEdge(CyNetwork network, String name){
+		Iterator<CyEdge> i = network.getEdgeList().iterator();
+		while(i.hasNext()){
+			CyEdge edge=i.next();
+			if(network.getRow(edge).get(CyNetwork.NAME, String.class).equals(name)) return edge;
+		}		
+		return null;
+	}
+	/**
 	 * Return new name of modular network to avoid to give the same name to 2 networks
 	 */
 	String noSynonymInNets(CyNetworkManager networkManager,String prefix){

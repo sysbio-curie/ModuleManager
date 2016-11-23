@@ -24,9 +24,11 @@ public class ModuleManager_App extends AbstractCySwingApp{
 		adapter.getCySwingApplication().addAction(new ListEdgesLinkingModules());
 		adapter.getCySwingApplication().addAction(new FindCommonNodes());
 		adapter.getCySwingApplication().addAction(new SelectNodesByName());
+		adapter.getCySwingApplication().addAction(new SelectEdgesByName());
 		adapter.getCySwingApplication().addAction(new ModuleInNodeAttribute());
 		menu.addSeparator();
 		adapter.getCySwingApplication().addAction(new NeighborhoodAroundSelectedNodes());
+		adapter.getCySwingApplication().addAction(new SCCinAttribute());
 		adapter.getCySwingApplication().addAction(new TransferCoordinates());
 		adapter.getCySwingApplication().addAction(new ListComponents());
 		adapter.getCySwingApplication().addAction(new ModuleVisualStyle());		
